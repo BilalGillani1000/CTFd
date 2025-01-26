@@ -573,6 +573,9 @@ def debug():
         return r
     abort(404)
 
+@views.route("/about")
+def about():
+    return render_template("about.html")
 
 @views.route("/robots.txt")
 def robots():
